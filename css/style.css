@@ -113,6 +113,7 @@ header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:
 /* MODULE FILE NAME
 /*****************************/
 
+<<<<<<< HEAD
 
 /* 1st UPDATE COMMIT */
 .section-block {padding-top:95px;padding-bottom:95px;position: relative;padding-left:80px}
@@ -148,6 +149,8 @@ background-position: center right;}
 .two-column-text-block a {color:var(--black);text-decoration: underline;}
 .two-col
 
+=======
+>>>>>>> main
 /* PAGE MODULE CODE HERE */
 
 
