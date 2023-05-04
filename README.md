@@ -1,8 +1,8 @@
 # Gax Design x TJL Design GitHub Training
 
-## Live: (https://)
+Live: (https://)
 
-## Staging: (https://)
+Staging: (https://)
 
 ##
 
