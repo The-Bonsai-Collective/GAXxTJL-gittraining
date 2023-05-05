@@ -93,8 +93,8 @@ header {background-color:var(--black);padding:25px 0px 25px;z-index:50}
 
 /* 1st UPDATE COMMIT */
 .two-column-text-block h2 {font-size:89px}
-.two-column-text-block a {color:var(--black);text-decoration: underline;}
-.two-column-text-block p {font-size:30px;line-height:100%}
+.two-column-text-block a {color:var(--orange);text-decoration: underline;}
+.two-column-text-block p {font-size:12px;line-height:100%}
 
 
 /* PAGE MODULE CODE HERE */
