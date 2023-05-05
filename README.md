@@ -30,7 +30,12 @@ Support | Sophie
 
 ## Branches
 
-What branch does what - need to work out best practises on this
+ - What branch does what - need to work out best practises on this
+
+Main: Live site theme
+
+Dev: Development site theme
+
 
 ## Notable Features
 
