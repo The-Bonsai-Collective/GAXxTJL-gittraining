@@ -1,4 +1,12 @@
 <?php get_header(); ?>
+<section class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12"><h1>BRANCH EDITS</h1><p>making edits on a branch to see what it does</p></div>
+    </div>
+  </div>
+</section>
+
 <?php if( have_rows('page_builder') ): while ( have_rows('page_builder') ) : the_row(); if( get_row_layout() == 'header_banner_module' ): ?>
   <?php include("pb_modules/header_banner_module.php"); ?>
 <?php elseif ( get_row_layout() == 'image_and_content_module' ): ?>
