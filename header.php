@@ -53,3 +53,4 @@
 					</div>
 				</section>
 			</header>
+			<div>quick edit</div>
