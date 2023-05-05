@@ -80,8 +80,7 @@ body {overflow-x:hidden;font-family:var(--header)}
  * Header section styles including navigation
 **/
 
-header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:7px 0px 13px;height:40px;z-index:50}
-.hidden-height{height:40px}
+header {background-color:var(--black);padding:25px 0px 25px;z-index:50}
 .header-logo img {width:100%;height:auto}
 
 /**
@@ -107,7 +106,7 @@ header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:
 **/
 
 footer {background-color:var(--black);padding:40px 0px 30px;color:var(--grey);font-size:12px; line-height:20px}
-.footer-logo img {}
+.header-logo img {width: 100%;height: auto}
 footer p {color:var(--grey);font-size:12px; line-height:20px;font-family: var(--content);letter-spacing: 1px}
 .footer-menu-container {margin-top:45px}
 .footer-menu-container ul {list-style:none;padding:0px;margin:0px;}

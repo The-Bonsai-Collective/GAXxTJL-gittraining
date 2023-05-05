@@ -53,4 +53,3 @@
 					</div>
 				</section>
 			</header>
-			<div class="hidden-height"></div>
