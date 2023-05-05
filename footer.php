@@ -17,7 +17,7 @@
 						<li class="social-facebook"><a href="<?php the_field('facebook_url', 'option'); ?>" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
 					<?php } ?>
 				<?php if(get_field('instagram_url', 'option')) { ?>
-					<li class="social-insta"><a href="<?php the_field('instagram_url', 'option'); ?>" target="_blank" rel="noopener noreferrer"<i class="fa-brands fa-instagram"></i></a></li>
+					<li class="social-insta"><a href="<?php the_field('instagram_url', 'option'); ?>" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
 				<?php } ?>
 				<?php if(get_field('linkedin_url', 'option')) { ?>
 					<li class="social-linkedin"><a href="<?php the_field('linkedin_url', 'option'); ?>" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>

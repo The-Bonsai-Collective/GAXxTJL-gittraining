@@ -1,6 +1,6 @@
 /**
  * #.# Reset
-*/
+**/
 *, *::before, *::after {box-sizing: border-box;}* {margin: 0;}html, body {height: 100%;}body {line-height: 1.5; -webkit-font-smoothing: antialiased;}
 input {border-radius: 0;}input[type="search"] {-webkit-appearance: none;}
 ol,ul{list-style:none} blockquote,q{quotes:none} blockquote:before,blockquote:after,q:before,q:after{content:''; content:none;} table{border-collapse:collapse;border-spacing:0}
@@ -12,9 +12,8 @@ canvas { max-width: 100%; height: auto; }
 
 /**
  * #.# Site Root
- *
- * All the root classes forthis site
- */
+ * All the root classes for this site
+**/
 
 :root{
   --black:#000000;
@@ -44,13 +43,11 @@ canvas { max-width: 100%; height: auto; }
 
 /**
  * #.# Theme Defaults
- *
  * All the base level theme defaults
-*/
+**/
 
 ::-moz-selection { background-color: var(--orange); color: var(--black); }
 ::selection { background-color: var(--orange); color: var(--black); }
-
 img, picture, video, canvas, svg { display: block;  max-width: 100%;}input, button, textarea, select {font: inherit;}
 *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 body{-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;display:none;font-family:var(--helvetica)}
@@ -80,35 +77,16 @@ body {overflow-x:hidden;font-family:var(--header)}
 
 /**
  * #.# Header
- *
  * Header section styles including navigation
- */
+**/
 
 header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:7px 0px 13px;height:40px;z-index:50}
 .hidden-height{height:40px}
-.header-logo img {}
-
-.menu-nav {;background-color:var(--white);width:40px;right: 0px;    -webkit-transition: background-color 1s linear;      -ms-transition: background-color 1s linear;  transition: background-color 1s linear;cursor:pointer}
-
-.hamburger-lines {height: 13px;width: 17px;position: absolute; top: 13px; left: 12px; display: flex;  flex-direction: column;  justify-content: space-between; z-index: 100;cursor: pointer;}
-.hamburger-lines .line { display: block; height: 2px; width: 100%; width: 16px; border-radius: 0; background: var(--black);}
-.hamburger-lines .line1 {transform-origin: 0px 0px; transition: transform .6s ease-in-out;margin-bottom:5px}
-.hamburger-lines .line2 {transform-origin: 6px 0px; transition: transform .6s ease-in-out;margin-bottom:5px}
-.hamburger-lines .line3 {transform-origin: 12px 0px; transition: transform .6s ease-in-out;}
-
-.menu-nav.active {background-color:var(--black);  -webkit-transition: background-color 350ms linear;    -ms-transition: background-color 350ms linear;    transition: background-color 350ms linear;}
-.menu-nav.active .hamburger-lines .line { display: block; height: 2px; width: 100%; width: 12px; border-radius: 0; background: var(--white);}
-.menu-nav.active .hamburger-lines .line1 {transform: rotate(90deg); background: var(-white);}
-.menu-nav.active .hamburger-lines .line2 {transform: rotate(90deg); background: var(-white);}
-.menu-nav.active .hamburger-lines .line3 {transform: rotate(90deg); background: var(--white);}
-
-
 
 /**
  * #.# Page Builder Modules
- *
  * Layout elemts for all the site page builder modules
- */
+**/
 
 /* MODULE FILE NAME
 /*****************************/
@@ -122,11 +100,8 @@ header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:
 /* PAGE MODULE CODE HERE */
 
 
-
-
 /**
  * #.# Footer
- *
  * Footer area styles
 **/
 
@@ -152,7 +127,6 @@ ul.social-links {margin-top: 12px;}
 
 /**
  * #.# Misc
- *
  * All the misc styles that are needed inc btns and form sections
 **/
 
@@ -175,12 +149,10 @@ ul.social-links {margin-top: 12px;}
 .vcenter{display:flex;flex-direction:column;justify-content:center;}
 .wpcf7-spinner {position: absolute;}
 .full-height{height:100vh}
-
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
-
 .underline-link{position:relative}
 .underline-link::before{content:"";background-image:url(img/underline-apply.svg);height:10px;width:311px;position:absolute;bottom:-17px;background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;left:0}
 .noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
@@ -188,9 +160,8 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 /**
  * #.# Responsive
- *
  * All the media queries, desktop first
- */
+**/
 
 @media (min-width: 1400px) {
 .container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{max-width:1300px}
