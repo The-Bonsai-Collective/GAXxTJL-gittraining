@@ -92,7 +92,7 @@ header {background-color:var(--black);padding:25px 0px 25px;z-index:50}
 /*****************************/
 
 /* 1st UPDATE COMMIT */
-.two-column-text-block {column-count: 2;column-gap: 40px;}
+.text-cols {column-count: 2;column-gap: 40px;}
 .two-column-text-block h2 {font-size:60px;color: var(--orange);}
 .two-column-text-block p {font-size:12px;line-height:25px}
 
