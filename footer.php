@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 center-mobile small-screen-padding">
-						<a href="<?php bloginfo('url'); ?>/" title="SITE NAME" class="footer-logo"><?php $image = get_sub_field('site_footer_logo', 'option');  $size = 'full'; {echo wp_get_attachment_image( $image, $size );} ?></a>
+						<a href="<?php bloginfo('url'); ?>/" title="SITE NAME" class="footer-logo"><?php $image = get_field('site_footer_logo', 'option');  $size = 'full'; {echo wp_get_attachment_image( $image, $size );} ?></a>
 						<?php wp_nav_menu( array( 'container_class' => 'footer-menu-container', 'menu_class' => 'footer-menu', 'menu_id' => '','theme_location' => 'footer' ) ); ?>
 						<p>
 							© <?php echo date("Y"); ?> <?php the_field('copyright_text', 'option'); ?>

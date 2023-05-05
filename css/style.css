@@ -82,6 +82,7 @@ body {overflow-x:hidden;font-family:var(--header)}
 
 header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:7px 0px 13px;height:40px;z-index:50}
 .hidden-height{height:40px}
+.header-logo img {width:100%;height:auto}
 
 /**
  * #.# Page Builder Modules
