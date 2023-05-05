@@ -106,7 +106,7 @@ header {background-color:var(--black);padding:25px 0px 25px;z-index:50}
 **/
 
 footer {background-color:var(--black);padding:40px 0px 30px;color:var(--grey);font-size:12px; line-height:20px}
-.header-logo img {width: 100%;height: auto}
+.footer-logo img {width: 100%;height: auto}
 footer p {color:var(--grey);font-size:12px; line-height:20px;font-family: var(--content);letter-spacing: 1px}
 .footer-menu-container {margin-top:45px}
 .footer-menu-container ul {list-style:none;padding:0px;margin:0px;}
