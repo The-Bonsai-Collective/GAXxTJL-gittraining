@@ -52,5 +52,5 @@
 						<?php wp_nav_menu( array( 'container_class' => '', 'menu_class' => 'mobile-navigation', 'menu_id' => '','theme_location' => 'mobile' ) ); ?>
 					</div>
 				</section>
-	  	</header>
+			</header>
 			<div class="hidden-height"></div>
