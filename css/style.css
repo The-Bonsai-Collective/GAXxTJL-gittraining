@@ -114,38 +114,9 @@ header {position:fixed;width:100%;top:0px;background-color:var(--black);padding:
 /*****************************/
 
 /* 1st UPDATE COMMIT */
-.section-block {padding-top:95px;padding-bottom:95px;position: relative;padding-left:80px}
-
-.banner-block {height:calc(100vh - 40px);min-height:860px;padding-top: 80px;}
-.fullscreen-bg{position:absolute;top:0;right:0;bottom:0;left:0;overflow:hidden;z-index:-2}
-.fullscreen-bg video{position:absolute;right:0;bottom:0;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);min-width:100%;min-height:100%;width:auto;height:auto;object-fit:cover;}
-.no-bg {background-color:transparent!important}
-.container {position: relative;z-index:1}
-.header-content-block h1 {font-family:var(--hbold);font-size:90px;line-height:77px;letter-spacing:-1px;text-transform: uppercase;padding-bottom:25px}
-.header-content-block h3 {font-family:var(--hreg);font-size:20px;line-height:26px;text-transform: uppercase;padding-bottom:35px;width: 81%;}
-.header-content-block p {font-family:var(--content);letter-spacing: 0.2px;font-size:15px;line-height:25px;padding-top:50px;  letter-spacing: -0.2px;}
-.header-content-block {padding-top:110px}
-.banner-block.color-black .header-content-block h1 {color:var(--white)}
-.banner-block.color-black .header-content-block h3 {color:var(--green)}
-.banner-block.color-black .header-content-block p  {color:var(--white)}
-.banner-block.color-black .header-content-block .bkl-btn {background-color:var(--green)}
-.banner-block.color-black .header-content-block .bkl-btn:hover {color:var(--black);background-color:var(--white)}
-.banner-block.color-white .header-content-block h1 strong {color:var(--green)}
-.header-content-block .bkl-btn {margin-top: 5px;}
-.header-content-block .col-lg-4 .bkl-btn {margin-top: 55px;}
-.background-image-banner {height:100%;width:100%;height: calc(100vh - 40px); margin-top: -80px;width: 186%;min-height:860px;
-background-position:center center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;
-background-position: center right;}
-.banner-block.color-white .header-content-block h1 {color:var(--black)}
-.banner-block.color-white .header-content-block h1 strong {color:var(--green)}
-.header-angle::before{content:"";width:70px;height:1100px;background-color:var(--orange-opp);position:absolute;z-index:10;left:80%;top:-142px}
-.angle-style-left::before {transform: rotate(-155deg);}
-.angle-style-right::before {transform: rotate(-30deg);left:70%;top:-90px;background-color: var(--orange);}
-.angle-style-alt::before {transform: rotate(25deg); right: 0%; top:-300px;}
-.wide-btn {min-width:345px}
-.two-column-text-block {}
 .two-column-text-block h2 {font-size:89px}
-.two-column-text-block a {color:var(--black);text-decoration: underline;}
+.two-column-text-block a {color:var(--black);text-decoration: underline;}
+.two-column-text-block p {font-size:30px;line-height:100%}
 
 
 /* PAGE MODULE CODE HERE */
@@ -157,7 +128,7 @@ background-position: center right;}
  * #.# Footer
  *
  * Footer area styles
- */
+**/
 
 footer {background-color:var(--black);padding:40px 0px 30px;color:var(--grey);font-size:12px; line-height:20px}
 .footer-logo img {}
@@ -183,7 +154,7 @@ ul.social-links {margin-top: 12px;}
  * #.# Misc
  *
  * All the misc styles that are needed inc btns and form sections
- */
+**/
 
 .mobile-overflow{position:relative;overflow:hidden}
 .img-fill{object-fit:cover;width:100%;height:auto}
