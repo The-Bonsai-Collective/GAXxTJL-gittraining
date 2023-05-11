@@ -55,6 +55,11 @@ if( function_exists('acf_add_options_page') ) {
   'redirect'  => false
  ));
 }
+add_filter( 'get_user_option_admin_color', 'update_user_option_admin_color', 5 );
+function update_user_option_admin_color( $color_scheme ) {
+    $color_scheme = 'midnight';
+    return $color_scheme;
+}
 // ONLY ADD IF NEEDED
 /*
 acf_add_options_sub_page(array(
