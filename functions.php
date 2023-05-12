@@ -23,7 +23,7 @@ wp_dequeue_style( 'storefront-gutenberg-blocks' ); // Storefront theme
 }
 // Email Encode
 if ( function_exists( 'eae_encode_emails' ) )  {
-    add_filter( 'acf/load_value', 'eae_encode_emails' );
+  add_filter( 'acf/load_value', 'eae_encode_emails' );
 }
 // Theme Security
 function remove_version() {return '';}
@@ -47,13 +47,13 @@ header('Strict-Transport-Security: max-age=31536000;');
 header('Referrer-Policy: same-origin');
 // Theme Settings
 if( function_exists('acf_add_options_page') ) {
- acf_add_options_page(array(
-  'page_title'  => 'Site Settings : General content used throughout the theme',
-  'menu_title' => 'Site Settings',
-  'menu_slug'  => 'theme-general-settings',
-  'capability' => 'edit_posts',
-  'redirect'  => false
- ));
+  acf_add_options_page(array(
+    'page_title'  => 'Site Settings : General content used throughout the theme',
+    'menu_title' => 'Site Settings',
+    'menu_slug'  => 'theme-general-settings',
+    'capability' => 'edit_posts',
+    'redirect'  => false
+  ));
 }
 add_filter( 'get_user_option_admin_color', 'update_user_option_admin_color', 5 );
 function update_user_option_admin_color( $color_scheme ) {
@@ -129,8 +129,8 @@ function pk_remove_admin_menus() {
 // Removes from post and pages
 add_action('init', 'pk_remove_comment_support', 100);
 function pk_remove_comment_support() {
-	 remove_post_type_support( 'post', 'comments' );
-	 remove_post_type_support( 'page', 'comments' );
+	remove_post_type_support( 'post', 'comments' );
+	remove_post_type_support( 'page', 'comments' );
 }
 // Removes from admin bar
 add_action( 'wp_before_admin_bar_render', 'pk_remove_comments_admin_bar' );
@@ -141,3 +141,28 @@ function pk_remove_comments_admin_bar() {
 // Registers an editor stylesheet for the theme
 function wpdocs_theme_add_editor_styles() {add_editor_style( 'css/custom-editor-style.css' );}
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+// Remove query strings from static resources
+function remove_query_strings( $src ) {
+    $parts = explode( '?', $src );
+    return $parts[0];
+}
+add_filter( 'script_loader_src', 'remove_query_strings', 15, 1 );
+add_filter( 'style_loader_src', 'remove_query_strings', 15, 1 );
+// Gak Support Menu 
+function add_custom_toolbar_menu( $wp_admin_bar ) {
+    $args = array(
+        'id' => 'custom-menu',
+        'title' => __( 'Gak Design Support', 'textdomain' ),
+        'href' => 'mailto:support@gakdesign.zendesk.com'
+    );
+    $wp_admin_bar->add_menu( $args );
+    $wp_admin_bar->add_node(
+        array(
+            'parent' => 'custom-menu',
+            'id' => 'custom-menu-item',
+            'title' => __( 'Contact the support desk', 'textdomain' ),
+            'href' => 'mailto:support@gakdesign.zendesk.com'
+        )
+    );
+}
+add_action( 'admin_bar_menu', 'add_custom_toolbar_menu', 999 );
