@@ -166,3 +166,6 @@ function add_custom_toolbar_menu( $wp_admin_bar ) {
     );
 }
 add_action( 'admin_bar_menu', 'add_custom_toolbar_menu', 999 );
+// Limit revisions 
+if (!defined('WP_POST_REVISIONS')) define('WP_POST_REVISIONS', 5);
+if (!defined('WP_POST_REVISIONS')) define('WP_POST_REVISIONS', false);
