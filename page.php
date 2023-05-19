@@ -60,14 +60,6 @@
   background-image: radial-gradient(circle at 46% 40%, rgba(228, 228, 228,0.06) 0%, rgba(228, 228, 228,0.06) 13%,transparent 13%, transparent 100%),radial-gradient(circle at 11% 41%, rgba(198, 198, 198,0.06) 0%, rgba(198, 198, 198,0.06) 19%,transparent 19%, transparent 100%),radial-gradient(circle at 52% 23%, rgba(14, 14, 14,0.06) 0%, rgba(14, 14, 14,0.06) 69%,transparent 69%, transparent 100%),radial-gradient(circle at 13% 85%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 44%,transparent 44%, transparent 100%),radial-gradient(circle at 57% 74%, rgba(232, 232, 232,0.06) 0%, rgba(232, 232, 232,0.06) 21%,transparent 21%, transparent 100%),radial-gradient(circle at 59% 54%, rgba(39, 39, 39,0.06) 0%, rgba(39, 39, 39,0.06) 49%,transparent 49%, transparent 100%),radial-gradient(circle at 98% 38%, rgba(157, 157, 157,0.06) 0%, rgba(157, 157, 157,0.06) 24%,transparent 24%, transparent 100%),radial-gradient(circle at 8% 6%, rgba(60, 60, 60,0.06) 0%, rgba(60, 60, 60,0.06) 12%,transparent 12%, transparent 100%),linear-gradient(90deg, #28a92b, #10a614);
 }
 
-html, body {
-  margin: 0;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-  font-family: "Signika Negative", sans-serif, Arial;
-}
-
 .panel {
 	width: 100%;
   height: 100%;
@@ -83,33 +75,8 @@ html, body {
   padding: 10px;
 }
 
-body {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
 
-h1, h2, p, li {
-  max-width: 800px;
-}
 
-/* HEADER */
-header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  padding: 6px 10px 10px 10px;
-  border-bottom-right-radius: 26px;
-  z-index: 100;
-  background-color: rgba(0,0,0,0.5);
-  will-change: transform;
-}
-
-/* HEADINGS */
-.header-section {
-  padding: 0 15px;
-  text-align: center;
-  margin: 40vh auto 50vh;
-}
 
 /* SCROLL DOWN */ 
 .scroll-down {
@@ -195,12 +162,6 @@ header {
 
 
 
-
-<header>
-   <a href="https://greensock.com/scrolltrigger">
-     <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
-  </a> 
-</header>
 
 
 
