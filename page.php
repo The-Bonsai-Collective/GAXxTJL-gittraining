@@ -104,8 +104,8 @@
 <header class="container-gsap">
   <h2 class="container__headline">Wanna see something neat?</h2>
 </header>
-<div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1261px; height: 2460px; padding: 0px 0px 1640px;">
-  <section class="container-gsap hero" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1261px; width: 1261px; max-height: 820px; height: 820px; padding: 0px;">
+<div class="pin-spacer">
+  <section class="container-gsap hero">
     <div class="hero__inner">
       <div class="hero__images"><img class="hero__image" src="https://images.unsplash.com/photo-1508781197106-d8c535dcf276?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);"></div>
       <div class="hero__content">
