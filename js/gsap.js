@@ -13,8 +13,8 @@ gsap.to(".text-block", {
     trigger: ".pin-this",
     markers: true,
     start: "top top",
-    end: "+=400",
-    pin: ".text-block",
+    end: "100%",
+    pin: ".text-block .content",
     scrub: 2,
   },
 });
@@ -27,9 +27,9 @@ gsap.to(".image-block", {
     trigger: ".pin-this",
     markers: true,
     start: "top top",
-    end: "+=400",
+    end: "100%",
     pin: ".image-block",
-    scrub: 2,
+    scrub: 0.5,
   },
   
 });
