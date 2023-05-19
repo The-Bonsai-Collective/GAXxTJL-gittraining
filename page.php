@@ -38,9 +38,9 @@
 
 .zoomer .images .clipper img {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
   height: 100%;
   width: 100%;
   filter: brightness(70%);
