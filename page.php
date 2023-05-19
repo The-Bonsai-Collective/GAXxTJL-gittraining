@@ -1,16 +1,8 @@
 <?php get_header(); ?>
 <style>
+  /** image **/
 .zoomer {
   position: relative;
-  display: flex;
-  /*justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;*/
-}
-
-.zoomer .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +10,15 @@
   height: 100vh;
   overflow: hidden;
 }
+
+/*.zoomer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}*/
 
 .zoomer .images {
   width: 100vw;
@@ -30,7 +31,7 @@
 .zoomer .images .clipper {
   position: relative;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -47,7 +48,7 @@
   border-radius:50px;
 }
 
-.zoomer .text {
+/*.zoomer .text {
   position: absolute;
   z-index: 1;
   display: flex;
@@ -57,16 +58,18 @@
   margin: 0;
   overflow: hidden;
   width: 90%;
-}
+}*/
 
-.zoomer .text .clipper {
+/*.zoomer .text .clipper {
   display: flex;
   flex-direction: column;
 }
 
 .zoomer .text .clipper h2 {
   text-align: center;
-}
+}*/
+
+/** text **/
 
 .sticky-content {
   position: relative;
