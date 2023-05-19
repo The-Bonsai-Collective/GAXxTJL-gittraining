@@ -49,6 +49,135 @@
   z-index: 2;
 }
 
+/* two */
+
+.zoomer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoomer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoomer .wrapper .images {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /*transform: scale(0, 0);*/
+  z-index: -1;
+}
+
+.zoomer .wrapper .images .clipper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoomer .wrapper .images .clipper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.zoomer .text {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 90%;
+}
+
+.zoomer .text .clipper {
+  display: flex;
+  flex-direction: column;
+}
+
+.zoomer .text .clipper h2 {
+  text-align: center;
+}
+
+.sticky-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.sticky-content .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.sticky-content .wrapper .text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: calc(50%);
+}
+
+.sticky-content .wrapper .images {
+  display: flex;
+  flex-direction: row;
+  width: calc(50%);
+  height: auto;
+}
+
+.sticky-content .wrapper .images ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sticky-content .wrapper .images ul li {
+  display: flex;
+  margin: 0;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sticky-content .wrapper .images ul li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.sticky-content .wrapper .images ul li:not(:first-of-type) {
+  margin-top: 5%;
+}
+
+.sticky-content .wrapper .images ul li:not(:first-of-type) img {
+  /*margin-top: 50%;*/
+
 
 </style>
   
@@ -84,7 +213,101 @@
 
 
 
+<div class="sticky-content">
+  <div class="wrapper">
+    <div class="text">
+      <div class="clipper">
+        <h1>Title</h1>
+        <p>Text</p>
+      </div>
+    </div>
+    <div class="images">
+      <ul>
+        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+<div class="zoomer">
+    <div class="images">
+      <div class="clipper">
+        <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
+      </div>
+    </div>
+    <div class="text" data-speed="0.1">
+      <div class="clipper">
+        <h2>Lipsum</h2>
+      </div>
+    </div>
+  </div>
+
+
+<div class="sticky-content">
+  <div class="wrapper">
+    <div class="text">
+      <div class="clipper">
+        <h1>This works well now</h1>
+        <p>Text</p>
+      </div>
+    </div>
+    <div class="images">
+      <ul>
+        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="sticky-content">
+  <div class="wrapper">
+    <div class="text">
+      <div class="clipper">
+        <h1>This works well also but....</h1>
+        <p>Text</p>
+      </div>
+    </div>
+    <div class="images">
+      <ul>
+        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="zoomer">
+    <div class="images">
+      <div class="clipper">
+        <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
+      </div>
+    </div>
+    <div class="text" data-speed="0.1">
+      <div class="clipper">
+        <h2>Lipsum</h2>
+      </div>
+    </div>
+  </div>
+
+
+<div class="sticky-content">
+  <div class="wrapper">
+    <div class="text">
+      <div class="clipper">
+        <h1>This latest title isn't working</h1>
+        <p>Text</p>
+      </div>
+    </div>
+    <div class="images">
+      <ul>
+        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
 
