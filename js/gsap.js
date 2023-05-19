@@ -8,7 +8,7 @@
 
 
 
-gsap.to(".text-block", {
+gsap.to(".text-block .content", {
   scrollTrigger: {
     trigger: ".pin-this",
     markers: true,
@@ -18,7 +18,7 @@ gsap.to(".text-block", {
     scrub: 2,
   },
 });
-gsap.to(".image-block", {
+gsap.to(".image-block img", {
   scale: 1.5,
   ease: "none",
   force3D: true,
@@ -31,7 +31,6 @@ gsap.to(".image-block", {
     pin: ".image-block",
     scrub: 2,
   },
-  
 });
 
 
