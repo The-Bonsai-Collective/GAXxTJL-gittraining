@@ -2,32 +2,30 @@
 	$(document).ready(function() {
 
 // GSAP Initial
-		console.clear();
-		gsap.registerPlugin(ScrollTrigger);
-
-
+console.clear();
+gsap.registerPlugin(ScrollTrigger);
 
 
 gsap.to(".text-block h2", {
   scrollTrigger: {
     trigger: ".pin-this",
     markers: true,
-    start: "top top",
-    end: "+=1000",
+    start: "top bottom",
+    end: "bottom -300%",
     pin: ".text-block h2",
     scrub: 2,
   },
 });
 gsap.to(".image-block img", {
   scale: 1.5,
-  ease: "none",
+  ease: "power2",
   force3D: true,
   scrollTrigger: {
     scale: 2,
     trigger: ".pin-this",
     markers: true,
-    start: "top top",
-    end: "+=1000",
+    start: "top bottom",
+    end: "bottom -300%",
     pin: ".image-block",
     scrub: 2,
   },
