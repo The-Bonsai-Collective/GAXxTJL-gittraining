@@ -96,10 +96,17 @@
 
 </style>
   
-<div style="height:100%;  display: flex; align-items: center; justify-content: center;">
+<div style="height:1--vh;  display: flex; align-items: center; justify-content: center;">
   Hello - bit of space to get the scroll
 </div>
 <div class="sticky-content">
+  <div class="zoomer">
+    <div class="images">
+      <div class="clipper">
+        <img data-speed="0.5" src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg">
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="text">
       <div class="clipper">
