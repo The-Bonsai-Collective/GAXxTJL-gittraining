@@ -2,14 +2,12 @@
 <style>
 .zoomer {
   position: relative;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index:1
 }
 
 .zoomer .wrapper {
@@ -79,13 +77,11 @@
 }
 
 .sticky-content .wrapper {
-  position:absolute;
-  top:0px;
-  z-index:2;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 90%;
+  z-index:1
 }
 
 .sticky-content .wrapper .text {
