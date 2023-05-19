@@ -11,7 +11,7 @@ texts.forEach((text, i) => {
   ScrollTrigger.create({
     pin: text,
     start: "top 40%",
-    trigger: ".sticky-content",
+    trigger: "jQuery(text).parent().parent()",
     endTrigger: jQuery(text).parent().parent(),
     end: "bottom 40%+=" + gsap.getProperty(text, "height"),
     //pinType: isTouch ? "fixed" : "transform",
@@ -30,12 +30,12 @@ images.forEach((image, i) => {
       ease: "none",
       force3D: true,
       scrollTrigger: {
-        pin: images,
-        trigger: ".sticky-content",
-        start: "top 40%",
-        end: "bottom 40%+=" + gsap.getProperty(text, "height"),
+        pin:jQuery(image).parent(),
+        trigger: jQuery(image).parent(),
+        start: "top top",
+        end: "bottom top",
         //pinType: isTouch ? "fixed" : "transform",
-        scrub: 1,
+        scrub: 0.5,
         markers: true
       }
     }
