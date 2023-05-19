@@ -113,6 +113,13 @@ HEADER HELLO TO GET SOME SCROLL ACTION
 
 
 <div class="sticky-content">
+  <div class="zoomer">
+    <div class="images">
+      <div class="clipper">
+        <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="text">
       <div class="clipper">
@@ -157,13 +164,8 @@ HEADER HELLO TO GET SOME SCROLL ACTION
 
 <div class="zoomer">
   <div class="images">
-      div class="clipper">
-      <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
-    </div>
-  </div>
-  <div class="text" data-speed="0.1">
     <div class="clipper">
-      <h2>Lipsum</h2>
+      <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
     </div>
   </div>
 </div>
