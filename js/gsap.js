@@ -11,7 +11,7 @@ texts.forEach((text, i) => {
   ScrollTrigger.create({
     pin: text,
     start: "top 40%",
-    trigger: "jQuery(text).parent().parent()",
+    trigger: jQuery(text).parent().parent(),
     endTrigger: jQuery(text).parent().parent(),
     end: "bottom 40%+=" + gsap.getProperty(text, "height"),
     //pinType: isTouch ? "fixed" : "transform",
@@ -24,7 +24,7 @@ var images = gsap.utils.toArray(".zoomer .images");
 images.forEach((image, i) => {
   gsap.fromTo(
     image,
-    { scale: 0.5 },
+    { scale: 0 },
     {
       scale: 1,
       ease: "none",
