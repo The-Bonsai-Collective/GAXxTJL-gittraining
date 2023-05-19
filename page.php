@@ -1,20 +1,158 @@
 <?php get_header(); ?>
 <style>
-.section {
-  height: 100vh; /* Set the height of the section as per your requirements */
+.zoomer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.image {
-  width: 200px; /* Initial width of the image */
-  transition: width 0.5s ease; /* Smooth transition for the image width change */
+.zoomer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoomer .images {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /*transform: scale(0, 0);*/
+  z-index: -1;
+}
+
+.zoomer .images .clipper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zoomer .images .clipper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.zoomer .text {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 90%;
+}
+
+.zoomer .text .clipper {
+  display: flex;
+  flex-direction: column;
+}
+
+.zoomer .text .clipper h2 {
+  text-align: center;
+}
+
+.sticky-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.sticky-content .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.sticky-content .wrapper .text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: calc(50%);
+}
+
+.sticky-content .wrapper .images {
+  display: flex;
+  flex-direction: row;
+  width: calc(50%);
+  height: auto;
+}
+
+.sticky-content .wrapper .images ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sticky-content .wrapper .images ul li {
+  display: flex;
+  margin: 0;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sticky-content .wrapper .images ul li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.sticky-content .wrapper .images ul li:not(:first-of-type) {
+  margin-top: 5%;
+  /* img {
+    margin-top: 50%;
+  } */
 }
 
 
 </style>
   
 
-<div class="container">
-  <img src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg" alt="">
+<div class="sticky-content">
+  <div class="wrapper">
+    <div class="text">
+      <div class="clipper">
+        <h1>BLANK SPACE</h1>
+      </div>
+    </div>
+    <div class="images">
+      <ul>
+        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="zoomer">
+  <div class="images">
+    <div class="clipper">
+      <img data-speed="0.5" src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg">
+    </div>
+  </div>
 </div>
 
 
