@@ -47,48 +47,6 @@
   height: 100%;
 }
 
-.hero__headline {
-  --padding: 1.5vmin;
-  --duration: 400ms;
-  --delay: calc(var(--duration) / 2);
-  --ease: cubic-bezier(0.25, 1, 0.5, 1);
-
-  position: relative;
-  display: inline-block;
-  font-size: 10vmin;
-  overflow: hidden;
-  margin-top: calc(var(--padding) * -1);
-  padding: var(--padding);
-}
-
-.hero__headline::after {
-  content: "";
-  position: absolute;
-  top: calc(100% - var(--padding));
-  left: 0;
-  background-color: white;
-  width: 100%;
-  height: 1.5vmin;
-  transform: scaleX(0);
-  transition: transform var(--duration) var(--delay) var(--ease);
-}
-
-.hero__headline span {
-  display: block;
-  transform: translateY(110%);
-  transition: transform var(--duration) var(--ease);
-}
-
-.active .hero__headline::after {
-  transform: scaleX(1);
-  transition-delay: 0s;
-}
-
-.active .hero__headline span {
-  transform: translateY(0);
-  transition-delay: var(--delay);
-}
-
 
 </style>
 <section class="">
@@ -108,8 +66,17 @@
   <section class="container-gsap hero">
     <div class="hero__inner">
       <div class="hero__images"><img class="hero__image" src="https://images.unsplash.com/photo-1508781197106-d8c535dcf276?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);"></div>
-      <div class="hero__content">
-        <div class="hero__headline"><span>How Neat is That?</span></div>
+      <div class="hero__content row">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis arcu sed urna aliquam rutrum. In nec augue vel diam molestie euismod vitae sed augue. Nulla lobortis volutpat odio, nec ultrices purus aliquet ac. Aliquam a dolor quis orci vulputate aliquet in ut metus. Ut gravida, est consectetur commodo cursus, eros turpis facilisis est, id dictum mauris ipsum et elit. Nullam sed porttitor justo. Aliquam vel volutpat nunc. Curabitur ut nisi non nisi vehicula scelerisque et eu purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum maximus magna sed varius tempus. Sed efficitur tortor orci, non congue neque aliquet quis. Morbi aliquam est malesuada mi suscipit, sed blandit velit facilisis.
+
+Nullam molestie gravida nisi, ac porta velit imperdiet eget. Quisque ex eros, vestibulum et libero id, volutpat feugiat quam. Vestibulum faucibus mi non quam ornare, nec faucibus risus vulputate. Suspendisse porttitor lacinia dolor, ac posuere velit malesuada non. Morbi placerat mauris sollicitudin mauris tincidunt viverra viverra quis nibh. Etiam placerat eleifend ex quis pretium. Sed porta sollicitudin convallis. Aliquam massa libero, varius eu varius nec, ornare nec diam. Pellentesque malesuada enim ac tortor hendrerit, nec faucibus odio vestibulum. Nullam lobortis urna ut ligula bibendum, vel euismod ligula porta. Phasellus vitae porta lectus. Nunc tristique condimentum nulla non tristique. Nunc sed lacus tristique, cursus urna et, lobortis ante. Mauris non nibh eu ipsum auctor aliquam. Etiam eu quam placerat, iaculis dolor a, rutrum elit.
+
+Ut eget sem justo. Sed sodales tempus scelerisque. Nam dolor velit, congue quis augue quis, dapibus venenatis odio. Donec vehicula vel magna nec tincidunt. Nulla in orci at tortor auctor dictum. Nunc malesuada felis sed sem placerat suscipit. Ut ut velit ullamcorper, viverra ex et, mattis neque. Duis id magna nisl.
+
+Praesent auctor nec velit id posuere. Suspendisse nec hendrerit odio, vel mattis lectus. Maecenas sagittis vehicula egestas. Vivamus lobortis volutpat felis sed consectetur. Praesent bibendum non quam ac ullamcorper. In quis lectus sed ligula bibendum varius ac et mi. Nam ac metus pharetra, convallis risus at, elementum orci. Curabitur viverra vel orci non accumsan. Nunc mattis auctor felis, nec imperdiet enim dictum a. Aliquam vel sem quis velit ornare vulputate eget ut purus.
+
+Vivamus quis ante auctor, egestas ante ut, fermentum lacus. Sed eget mi ac lectus varius auctor. Curabitur ac sapien orci. Cras nisl tellus, maximus eu eleifend vitae, laoreet in eros. Donec rutrum mi ac augue tincidunt elementum. Vivamus vitae bibendum est. Curabitur tincidunt elit dui, et imperdiet mauris auctor eu. In a fringilla quam. Nullam fermentum hendrerit lacus, nec cursus urna pharetra vitae. Duis vestibulum felis eu malesuada finibus. Quisque consectetur, mauris eu ornare efficitur, dui nunc interdum diam, a laoreet quam enim ac ipsum. Integer at erat velit. In a tincidunt urna, vel mollis metus.</div>
       </div>
     </div>
   </section>
