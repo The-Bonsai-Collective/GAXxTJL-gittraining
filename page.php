@@ -28,7 +28,7 @@ section.pin-this {
   Hello - bit of space to get the scroll
 </div>
 
-<section class="pin-this">
+<section class="pin-this" style="height:100vh">
   <div class="image-block">
     <div class="container">
       <div class="row">
@@ -77,7 +77,7 @@ section.pin-this {
 
 
 <div style="height:100vh;  display: flex; align-items: center; justify-content: center;position: relative;">
-  Hello - and im out
+  Hello - bit of space to get the scroll
 </div>
 
 
