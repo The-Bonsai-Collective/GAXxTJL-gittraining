@@ -7,13 +7,14 @@
 
 
 
+
 gsap.to(".text-block h2", {
   scrollTrigger: {
     trigger: ".pin-this",
     markers: true,
     start: "top top",
     end: "+=1000",
-    pin: ".text-block h2",
+    pin: ".text-block",
     scrub: 2,
   },
 });
