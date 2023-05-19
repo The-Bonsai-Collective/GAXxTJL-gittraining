@@ -9,12 +9,15 @@ section.pin-this {
   width: 100%;
   top: 50px;
 }
+.image-block img {border-radius:100px}
+
 .text-block {
   position: absolute;
   z-index: 2;
   width: 100%;
   top: 50px;
 }
+
 </style>
   
 
@@ -39,7 +42,9 @@ section.pin-this {
         <div class="col-lg-12"></div>
       </div>
       <div class="row">
-        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+          <h2 style="font-size: 64px;line-height: 76px;letter-spacing: -0.02em;">Creating a continuing legacy</h2>
+        </div>
         <div class="col-lg-6">
           <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus metus nisl, non tempor augue euismod in. Phasellus malesuada felis a aliquam efficitur. Suspendisse sollicitudin sagittis ex. Ut vestibulum libero ligula, eget venenatis ipsum tristique at. Mauris feugiat eleifend justo, quis accumsan eros gravida quis. Phasellus quis facilisis tellus. Aliquam dolor metus, lacinia ac elit quis, venenatis semper metus. Morbi blandit ornare mauris, et rutrum mi pellentesque eget.</p>
