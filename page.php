@@ -31,11 +31,20 @@
   position: absolute;
   top: 0;
   left: 0;
+  width:100%;
+  max-width:800px;
+  /**height: 160%;**/
+  height:auto;
+  object-fit: cover;
+}
+section.container-gsap.hero.active {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 160%;
   object-fit: cover;
 }
-
 .hero__content {
   display: none;
   position: absolute;
@@ -65,7 +74,9 @@
 <div class="pin-spacer">
   <section class="container-gsap hero">
     <div class="hero__inner">
-      <div class="hero__images"><img class="hero__image" src="https://images.unsplash.com/photo-1508781197106-d8c535dcf276?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1200&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjE0NTg5fQ" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);"></div>
+      <div class="hero__images">
+        <img class="hero__image" src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg">
+      </div>
       <div class="hero__content row">
         <div class="col-lg-6"></div>
         <div class="col-lg-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis arcu sed urna aliquam rutrum. In nec augue vel diam molestie euismod vitae sed augue. Nulla lobortis volutpat odio, nec ultrices purus aliquet ac. Aliquam a dolor quis orci vulputate aliquet in ut metus. Ut gravida, est consectetur commodo cursus, eros turpis facilisis est, id dictum mauris ipsum et elit. Nullam sed porttitor justo. Aliquam vel volutpat nunc. Curabitur ut nisi non nisi vehicula scelerisque et eu purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum maximus magna sed varius tempus. Sed efficitur tortor orci, non congue neque aliquet quis. Morbi aliquam est malesuada mi suscipit, sed blandit velit facilisis.
