@@ -28,12 +28,8 @@
 }
 
 .hero__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  max-width:800px;
-  /**height: 160%;**/
+  position: relative;
+  width:75%;
   height:auto;
   object-fit: cover;
 }
@@ -72,10 +68,12 @@ section.container-gsap.hero.active {
   <h2 class="container__headline">Wanna see something neat?</h2>
 </header>
 <div class="pin-spacer">
-  <section class="container-gsap hero">
+  <section class="container container-gsap hero">
     <div class="hero__inner">
-      <div class="hero__images">
-        <img class="hero__image" src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg">
+      <div class="hero__images row">
+        <div class="col-lg-12">
+          <img class="hero__image" src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg">
+        </div>
       </div>
       <div class="hero__content row">
         <div class="col-lg-6"></div>
