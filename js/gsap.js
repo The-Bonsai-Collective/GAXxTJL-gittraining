@@ -42,6 +42,16 @@ images.forEach((image, i) => {
   );
 });
 
+let st = ScrollTrigger.create({
+        trigger: ".pin-this",
+        pin: ".text-block",
+        start: "top center",
+        end: "+=500"
+      });
+
+console.log(st.pin);
+
+
 
 
 

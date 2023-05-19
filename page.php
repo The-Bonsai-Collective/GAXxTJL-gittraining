@@ -113,7 +113,7 @@
   <div class="image-block">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12"><img rc="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg"></div>
+        <div class="col-lg-12"><img src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg"></div>
       </div>
     </div>
   </div>
@@ -123,6 +123,7 @@
         <div class="col-lg-12"></div>
       </div>
       <div class="row">
+        <div class="col-lg-6"></div>
         <div class="col-lg-6">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus metus nisl, non tempor augue euismod in. Phasellus malesuada felis a aliquam efficitur. Suspendisse sollicitudin sagittis ex. Ut vestibulum libero ligula, eget venenatis ipsum tristique at. Mauris feugiat eleifend justo, quis accumsan eros gravida quis. Phasellus quis facilisis tellus. Aliquam dolor metus, lacinia ac elit quis, venenatis semper metus. Morbi blandit ornare mauris, et rutrum mi pellentesque eget.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus metus nisl, non tempor augue euismod in. Phasellus malesuada felis a aliquam efficitur. Suspendisse sollicitudin sagittis ex. Ut vestibulum libero ligula, eget venenatis ipsum tristique at. Mauris feugiat eleifend justo, quis accumsan eros gravida quis. Phasellus quis facilisis tellus. Aliquam dolor metus, lacinia ac elit quis, venenatis semper metus. Morbi blandit ornare mauris, et rutrum mi pellentesque eget.</p>
