@@ -1,6 +1,20 @@
 <?php get_header(); ?>
 <style>
-
+section.pin-this {
+  position: relative;
+}
+.image-block {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 10px;
+}
+.text-block {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 10px;
+}
 </style>
   
 
