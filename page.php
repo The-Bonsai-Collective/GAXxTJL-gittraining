@@ -7,13 +7,13 @@ section.pin-this {
   position: absolute;
   z-index: -1;
   width: 100%;
-  top: 10px;
+  top: 50px;
 }
 .text-block {
   position: absolute;
   z-index: 2;
   width: 100%;
-  top: 10px;
+  top: 50px;
 }
 </style>
   
@@ -21,7 +21,7 @@ section.pin-this {
 
 
 
-<div style="height:100vh;  display: flex; align-items: center; justify-content: center;">
+<div style="height:100vh;  display: flex; align-items: center; justify-content: center;position: relative;">
   Hello - bit of space to get the scroll
 </div>
 
@@ -58,7 +58,7 @@ section.pin-this {
 
 
 
-<div style="height:100vh;  display: flex; align-items: center; justify-content: center;">
+<div style="height:100vh;  display: flex; align-items: center; justify-content: center;position: relative;">
   Hello - and im out
 </div>
 
