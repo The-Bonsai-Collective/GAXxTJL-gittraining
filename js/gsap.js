@@ -22,7 +22,6 @@ texts.forEach((text, i) => {
   });
 });
 
-
 var images = gsap.utils.toArray(".sticky-content .zoomer .images");
 images.forEach((image, i) => {
   gsap.fromTo(
@@ -47,6 +46,19 @@ images.forEach((image, i) => {
 
 //ScrollTrigger.sort();
 
+
+
+
+var largeTL = gsap.timeline({
+  scrollTrigger: { 
+    trigger: '.start-trig',
+    pin: '.bg', 
+    pinSpacing: false,
+    start: "top top",
+    markers: true,
+    end: '+=200%',
+  },
+})
 
 
 });
