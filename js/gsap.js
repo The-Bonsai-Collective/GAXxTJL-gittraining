@@ -12,7 +12,7 @@ var texts = gsap.utils.toArray(".sticky-content .text");
 texts.forEach((text, i) => {
   ScrollTrigger.create({
     pin: text,
-    start: "top top",
+    start: "top 0%^",
     trigger: jQuery(text).parent().parent(),
     endTrigger: jQuery(text).parent().parent(),
     end: "bottom 0%+=" + gsap.getProperty(text, "height"),
@@ -22,7 +22,7 @@ texts.forEach((text, i) => {
   });
 });
 
-var images = gsap.utils.toArray(".zoomer .images");
+var images = gsap.utils.toArray(".sticky-content .zoomer .images");
 images.forEach((image, i) => {
   gsap.fromTo(
     image,
