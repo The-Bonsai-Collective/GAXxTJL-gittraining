@@ -8,7 +8,7 @@
 
 
 
-gsap.to(".text-block .content", {
+gsap.to(".text-block", {
   scrollTrigger: {
     trigger: ".pin-this",
     markers: true,
