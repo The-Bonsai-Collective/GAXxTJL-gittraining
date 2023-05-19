@@ -32,10 +32,10 @@ images.forEach((image, i) => {
       scrollTrigger: {
         pin: images,
         trigger: ".sticky-content",
-        start: "top top",
-        end: "bottom top",
+        start: "top 40%",
+        end: "bottom 40%+=" + gsap.getProperty(text, "height"),
         //pinType: isTouch ? "fixed" : "transform",
-        scrub: 0.5,
+        scrub: 1,
         markers: true
       }
     }
