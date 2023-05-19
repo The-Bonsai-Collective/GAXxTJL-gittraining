@@ -33,7 +33,7 @@
   height:auto;
   object-fit: cover;
 }
-section.container-gsap.hero.active {
+section.container-gsap.hero.active .hero__image {
   position: absolute;
   top: 0;
   left: 0;
