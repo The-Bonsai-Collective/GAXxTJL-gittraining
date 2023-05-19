@@ -6,29 +6,43 @@
 		gsap.registerPlugin(ScrollTrigger);
 
 
-// Image Pin Show Scroll
-gsap.to(".hero", {
+let container = document.querySelector(".pin-container");
+
+gsap.set(".section-2", {
+  yPercent: 100
+});
+
+gsap.set(".image-frame-1", {
+  xPercent: 100
+})
+
+gsap.set(".image-frame-2", {
+  xPercent: -100
+})
+
+let tl = gsap.timeline({
+  defaults: { ease: "none" },
   scrollTrigger: {
-    trigger: ".hero",
-    scrub: true,
+    trigger: container,
     pin: true,
-    start: "center center",
-    end: "bottom -100%",
-    toggleClass: "active",
-    ease: "power2"
+    start: "top top",
+    end: () => "+=" + container.clientHeight * 6,
+    scrub: 1,
+    invalidatOnRefresh: true
   }
 });
 
-gsap.to(".hero__image", {
-  scrollTrigger: {
-    trigger: ".hero",
-    scrub: 0.5,
-    start: "top bottom",
-    end: "bottom -300%",
-    ease: "power2"
-  },
-  y: "-30%"
-});
+tl.to(".image-frame-1", {
+  xPercent: 0
+})
+.set({}, {}, "+=1")
+.to(".section-2", {
+  yPercent: 0
+})
+.to(".image-frame", {
+  xPercent: "+=100"
+}, "-=50%")
+.set({}, {}, "+=1") // extend tl duration
 
 
 
