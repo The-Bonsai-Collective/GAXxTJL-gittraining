@@ -28,18 +28,26 @@
 }
 
 .hero__image {
-  position: relative;
-  width:75%;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 50px);
+  width:100%;
   height:auto;
   object-fit: cover;
+  transition:0.5s ease-in-out all;
+    -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 section.container-gsap.hero.active .hero__image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 160%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
+  transition:0.5s ease-in-out all;
+    -webkit-transform: scaleX(2);
+  transform: scaleX(2);
 }
 .hero__content {
   display: none;
@@ -54,18 +62,9 @@ section.container-gsap.hero.active .hero__image {
 
 
 </style>
-<section class="">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12"><h1>BRANCH EDITS</h1><p>making edits on a branch to see what it does</p></div>
-    </div>
-  </div>
-</section>
-
-
   
 <header class="container-gsap">
-  <h2 class="container__headline">Wanna see something neat?</h2>
+  <h2 class="container__headline">Tonya this is/isnt working!</h2>
 </header>
 <div class="pin-spacer">
   <section class="container container-gsap hero">
