@@ -113,6 +113,7 @@ HEADER HELLO TO GET SOME SCROLL ACTION
 
 
 <div class="sticky-content">
+  <!-- image -->
   <div class="zoomer">
     <div class="images">
       <div class="clipper">
@@ -120,13 +121,8 @@ HEADER HELLO TO GET SOME SCROLL ACTION
       </div>
     </div>
   </div>
+  <!-- text -->
   <div class="wrapper">
-    <div class="text">
-      <div class="clipper">
-        <h1>Title</h1>
-        <p>Text</p>
-      </div>
-    </div>
     <div class="images">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non quam blandit, eleifend dui eget, dapibus enim. Aliquam erat volutpat. Maecenas in metus egestas, faucibus leo quis, vestibulum arcu. Duis hendrerit facilisis nibh ut imperdiet. Fusce suscipit placerat dolor, vitae euismod risus. Ut lectus magna, iaculis vel ex vel, efficitur rhoncus sapien. Suspendisse potenti. Sed gravida feugiat nisi, in volutpat nulla porta non. Vestibulum ac sodales felis. Pellentesque sed dui eu justo efficitur iaculis. Quisque at magna vel est posuere dapibus facilisis eget libero. Phasellus egestas sit amet nisi non dapibus. Nulla lectus mi, vulputate aliquam leo a, luctus iaculis odio.</p>
 
@@ -162,13 +158,7 @@ HEADER HELLO TO GET SOME SCROLL ACTION
   </div>
 </div>
 
-<div class="zoomer">
-  <div class="images">
-    <div class="clipper">
-      <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
-    </div>
-  </div>
-</div>
+
 
 
 <?php if( have_rows('page_builder') ): while ( have_rows('page_builder') ) : the_row(); if( get_row_layout() == 'header_banner_module' ): ?>
