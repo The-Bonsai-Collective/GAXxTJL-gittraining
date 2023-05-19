@@ -117,7 +117,7 @@ HEADER HELLO TO GET SOME SCROLL ACTION
   <div class="zoomer">
     <div class="images">
       <div class="clipper">
-        <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
+        <img data-speed="0.5" src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/upload">
       </div>
     </div>
   </div>
