@@ -31,7 +31,7 @@
 .zoomer .images .clipper {
   position: relative;
   display: flex;
-  /*flex-direction: column;*/
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -39,16 +39,16 @@
 
 .zoomer .images .clipper img {
   position: absolute;
-  /*top: 50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
   filter: brightness(70%);
   border-radius:50px;
 }
 
-/*.zoomer .text {
+.zoomer .text {
   position: absolute;
   z-index: 1;
   display: flex;
@@ -58,16 +58,16 @@
   margin: 0;
   overflow: hidden;
   width: 90%;
-}*/
+}
 
-/*.zoomer .text .clipper {
+.zoomer .text .clipper {
   display: flex;
   flex-direction: column;
 }
 
 .zoomer .text .clipper h2 {
   text-align: center;
-}*/
+}
 
 /** text **/
 
