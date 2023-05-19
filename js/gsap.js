@@ -30,8 +30,8 @@ images.forEach((image, i) => {
       ease: "none",
       force3D: true,
       scrollTrigger: {
-        pin:jQuery(image).parent(),
-        trigger: jQuery(image).parent(),
+        trigger: jQuery(text).parent().parent(),
+        endTrigger: jQuery(text).parent().parent(),
         start: "top top",
         end: "bottom top",
         //pinType: isTouch ? "fixed" : "transform",
