@@ -12,7 +12,7 @@ var texts = gsap.utils.toArray(".sticky-content .text");
 texts.forEach((text, i) => {
   ScrollTrigger.create({
     pin: text,
-    start: "top 0%^",
+    start: "top 0%",
     trigger: jQuery(text).parent().parent(),
     endTrigger: jQuery(text).parent().parent(),
     end: "bottom 0%+=" + gsap.getProperty(text, "height"),
@@ -21,6 +21,8 @@ texts.forEach((text, i) => {
     refreshPriority: -1
   });
 });
+
+
 
 var images = gsap.utils.toArray(".sticky-content .zoomer .images");
 images.forEach((image, i) => {
@@ -31,13 +33,16 @@ images.forEach((image, i) => {
       scale: 1,
       ease: "none",
       force3D: true,
+      //force3D: false,
+			transformStyle:"preserve-3d",
+			ease: Linear.easeNone,
       scrollTrigger: {
-        pin:jQuery(image).parent(),
-        trigger: jQuery(image).parent(),
-        start: "top top",
-        end: "bottom top",
+        pin:".sticky-content .zoomer",
+        trigger: ".sticky-content .zoomer",
+        start: "50% center",
+        end: "100%",
         //pinType: isTouch ? "fixed" : "transform",
-        scrub: 0.5,
+        scrub: true,
         markers: true
       }
     }
