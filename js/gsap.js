@@ -8,28 +8,30 @@
 
 // --- ORANGE PANEL ---
 
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".orangeWrapper",
-    scrub: true,
-    pin: true,
-    
-    start: "50% 50%",
-    end: "+=200%"
-  }
-})
+$(".section").each(function() {
+    var $image = $(this).find(".image");
 
-.from(".orange", {
-  scale: 0.5, 
-  ease: "none"
-})
+    $(this).on("scroll", function() {
+      var sectionTop = $(this).offset().top;
+      var sectionBottom = sectionTop + $(this).outerHeight();
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
 
-.from(".line-2", {
-  scaleX:0,
-  ease:"none",
-  transformOrigin:"left top"
-}, 0)
+      if (sectionTop <= viewportBottom && sectionBottom >= viewportTop) {
+        var imageWidth = $image.width();
+        var imageHeight = $image.height();
+        var sectionHeight = $(this).height();
+        var imageRatio = imageWidth / imageHeight;
+        var sectionRatio = $(window).width() / sectionHeight;
 
+        if (imageRatio < sectionRatio) {
+          $image.css("width", "100%");
+        } else {
+          $image.css("width", "auto");
+        }
+      }
+    });
+  });
 
 
 
