@@ -24,7 +24,7 @@ gsap.to(".image-block img", {
     trigger: ".pin-this",
     markers: true,
     start: "top top",
-    end: "bottom bottom",
+    end: "",
     pin: ".image-block",
     scrub: 2,
   },
