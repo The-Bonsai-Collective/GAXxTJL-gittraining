@@ -1,68 +1,95 @@
 <?php get_header(); ?>
 <style>
-  .container-gsap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  color: white;
-  text-align: center;
-}
-.container__headline {
-  font-size: 5vmin;
-}
-
-.hero__inner {
-  display: flex;
+  .container {
+  min-height: 100vh;
+  border: 1px solid cyan;
   position: relative;
-  width: 100vw;
-  max-height: 100vh;
   overflow: hidden;
 }
 
-.hero__inner::before {
-  content: "";
-  display: block;
-  padding-bottom: calc(100% / (16 / 9));
-}
-
-.hero__image {
-  position: absolute;
-  top: 5px;
-  left: calc(50% - 50px);
-  width:100%;
-  height:auto;
-  object-fit: cover;
-  transition:0.5s ease-in-out all;
-    -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-section.container-gsap.hero.active .hero__image {
+.image-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  object-fit: cover;
-  transition:0.5s ease-in-out all;
-    -webkit-transform: scaleX(2);
-  transform: scaleX(2);
 }
-.hero__content {
-  display: none;
+
+.image-frame {
+  height: 100vh;
+  width: 100%;
+  border: 1px solid orange;
+  z-index: 1;
   position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.section {
+  height: 100vh;
+  border: 1px solid pink;
+  position: absolute;
+  top: 0;
+/*   right: 0; */
+/*   bottom: 0; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 
 </style>
   
+
+<div class="container">
+  <h1>Start content</h1>
+</div>
+<div class="container pin-container">
+  
+  <div class="image-container">
+    <div class="image-frame image-frame-1">
+      <svg class="image">
+        <rect width="100%" height="100%" fill="#90caf9"></rect>
+      </svg>
+    </div>
+    <div class="image-frame image-frame-2">
+      <svg class="image">
+        <rect width="100%" height="100%" fill="#a5d6a7"></rect>
+      </svg>
+    </div>
+  </div>
+  
+  <div class="section section-1">
+    <h1>Section 1 content</h1>
+  </div>
+  <div class="section section-2">
+    <h1>Section 2 content</h1>
+  </div>
+</div>
+<div class="container">
+  <h1>More content</h1>
+</div>
+
+
+
+
+
+
+
+
+
 <header class="container-gsap">
   <h2 class="container__headline">Tonya this is/isnt working!</h2>
 </header>
