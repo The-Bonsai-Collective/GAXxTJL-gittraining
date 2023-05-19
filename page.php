@@ -156,96 +156,17 @@
 </div>
 
 <div class="zoomer">
-    <div class="images">
-      <div class="clipper">
-        <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
-      </div>
-    </div>
-    <div class="text" data-speed="0.1">
-      <div class="clipper">
-        <h2>Lipsum</h2>
-      </div>
+  <div class="images">
+      div class="clipper">
+      <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
     </div>
   </div>
-
-
-<div class="sticky-content">
-  <div class="wrapper">
-    <div class="text">
-      <div class="clipper">
-        <h1>This works well now</h1>
-        <p>Text</p>
-      </div>
-    </div>
-    <div class="images">
-      <ul>
-        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-      </ul>
+  <div class="text" data-speed="0.1">
+    <div class="clipper">
+      <h2>Lipsum</h2>
     </div>
   </div>
 </div>
-
-<div class="sticky-content">
-  <div class="wrapper">
-    <div class="text">
-      <div class="clipper">
-        <h1>This works well also but....</h1>
-        <p>Text</p>
-      </div>
-    </div>
-    <div class="images">
-      <ul>
-        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="zoomer">
-    <div class="images">
-      <div class="clipper">
-        <img data-speed="0.5" src="https://wallpapercave.com/wp/vxkQgbd.jpg">
-      </div>
-    </div>
-    <div class="text" data-speed="0.1">
-      <div class="clipper">
-        <h2>Lipsum</h2>
-      </div>
-    </div>
-  </div>
-
-
-<div class="sticky-content">
-  <div class="wrapper">
-    <div class="text">
-      <div class="clipper">
-        <h1>This latest title isn't working</h1>
-        <p>Text</p>
-      </div>
-    </div>
-    <div class="images">
-      <ul>
-        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-  
-
-
-
-
-
-
 
 
 <?php if( have_rows('page_builder') ): while ( have_rows('page_builder') ) : the_row(); if( get_row_layout() == 'header_banner_module' ): ?>
