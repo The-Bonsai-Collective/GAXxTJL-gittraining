@@ -15,13 +15,13 @@
 
 <section class="section">
   <div class="content">
-    <!-- Your section content here -->
+    HELLO
   </div>
 </section>
 
 <section class="section">
   <div class="content">
-    <img src="path/to/image.jpg" alt="Image" class="image">
+    <img src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg" alt="Image" class="image">
   </div>
 </section>
 
