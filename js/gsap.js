@@ -24,9 +24,9 @@ var images = gsap.utils.toArray(".zoomer .images");
 images.forEach((image, i) => {
   gsap.fromTo(
     image,
-    { scale: 1 },
+    { scale: 0.5 },
     {
-      scale: 2,
+      scale: 1,
       ease: "none",
       force3D: true,
       scrollTrigger: {
