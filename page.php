@@ -69,29 +69,29 @@
 
 .sticky-content {
   position: relative;
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100vw;*/
 }
 
 .sticky-content .wrapper {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   align-items: flex-start;
-  width: 90%;
+  width: 90%;*/
 }
 
 .sticky-content .wrapper .text {
-  display: flex;
+  /*display: flex;
   align-items: flex-start;
   flex-direction: row;
-  width: calc(50%);
+  width: calc(50%);*/
 }
 
 .sticky-content .wrapper .images {
-  width: calc(50%);
-  height: auto;
+  /*width: calc(50%);
+  height: auto;*/
 }
 
 </style>
