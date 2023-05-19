@@ -13,19 +13,9 @@
 </style>
   
 
-<section class="section">
-  <div class="content">
-    HELLO
-  </div>
-</section>
-
-<section class="section">
-  <div class="content">
-    <img src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg" alt="Image" class="image">
-  </div>
-</section>
-
-
+<div class="container">
+  <img src="https://exagen.co.uk.webheads.temporarywebsiteaddress.com/wp-content/uploads/2023/04/Background.jpg" alt="">
+</div>
 
 
 

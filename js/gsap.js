@@ -8,30 +8,15 @@
 
 // --- ORANGE PANEL ---
 
-$(".section").each(function() {
-    var $image = $(this).find(".image");
-
-    $(this).on("scroll", function() {
-      var sectionTop = $(this).offset().top;
-      var sectionBottom = sectionTop + $(this).outerHeight();
-      var viewportTop = $(window).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
-
-      if (sectionTop <= viewportBottom && sectionBottom >= viewportTop) {
-        var imageWidth = $image.width();
-        var imageHeight = $image.height();
-        var sectionHeight = $(this).height();
-        var imageRatio = imageWidth / imageHeight;
-        var sectionRatio = $(window).width() / sectionHeight;
-
-        if (imageRatio < sectionRatio) {
-          $image.css("width", "100%");
-        } else {
-          $image.css("width", "auto");
-        }
-      }
-    });
-  });
+gsap.to('img', {
+  scale: 1.5,
+  duration: 1,
+  scrollTrigger: {
+    trigger: 'img',
+    markers: true,
+    start: 'bottom bottom'
+  }
+})
 
 
 
