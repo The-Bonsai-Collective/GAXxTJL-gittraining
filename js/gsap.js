@@ -14,7 +14,7 @@ gsap.to(".text-block h2", {
     markers: true,
     start: "top top",
     end: "+=1000",
-    pin: ".text-block",
+    pin: ".pin-this",
     scrub: 2,
   },
 });
