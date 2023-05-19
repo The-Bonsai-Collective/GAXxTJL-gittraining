@@ -23,7 +23,6 @@ texts.forEach((text, i) => {
 });
 
 
-
 var images = gsap.utils.toArray(".sticky-content .zoomer .images");
 images.forEach((image, i) => {
   gsap.fromTo(
@@ -33,16 +32,13 @@ images.forEach((image, i) => {
       scale: 1,
       ease: "none",
       force3D: true,
-      //force3D: false,
-			transformStyle:"preserve-3d",
-			ease: Linear.easeNone,
       scrollTrigger: {
-        pin:".sticky-content .zoomer",
-        trigger: ".sticky-content .zoomer",
-        start: "50% center",
-        end: "100%",
+        pin:jQuery(image).parent(),
+        trigger: jQuery(image).parent(),
+        start: "top top",
+        end: "bottom top",
         //pinType: isTouch ? "fixed" : "transform",
-        scrub: true,
+        scrub: 0.5,
         markers: true
       }
     }
