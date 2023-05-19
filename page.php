@@ -147,10 +147,16 @@
       </div>
     </div>
     <div class="images">
-      <ul>
-        <li><img data-speed="0" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-        <li><img data-speed="0.2" src="https://wallpapercave.com/wp/vxkQgbd.jpg"></li>
-      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non quam blandit, eleifend dui eget, dapibus enim. Aliquam erat volutpat. Maecenas in metus egestas, faucibus leo quis, vestibulum arcu. Duis hendrerit facilisis nibh ut imperdiet. Fusce suscipit placerat dolor, vitae euismod risus. Ut lectus magna, iaculis vel ex vel, efficitur rhoncus sapien. Suspendisse potenti. Sed gravida feugiat nisi, in volutpat nulla porta non. Vestibulum ac sodales felis. Pellentesque sed dui eu justo efficitur iaculis. Quisque at magna vel est posuere dapibus facilisis eget libero. Phasellus egestas sit amet nisi non dapibus. Nulla lectus mi, vulputate aliquam leo a, luctus iaculis odio.</p>
+
+      <p>Nam dolor nisi, pretium nec mollis cursus, aliquet vitae nunc. Cras dignissim ut velit elementum bibendum. Fusce rutrum velit ac lorem cursus, in consequat turpis posuere. Quisque ut purus vel ipsum cursus faucibus. Etiam nec elit sapien. Duis ultrices commodo diam at scelerisque. In in leo velit. In interdum tellus diam, ultrices fermentum lectus maximus a.</p>
+
+      <p>Phasellus cursus tellus mi, eget bibendum nunc viverra in. Etiam ultricies placerat gravida. Ut et urna a lectus tincidunt faucibus a ac leo. Suspendisse potenti. Donec justo lorem, consectetur aliquam pellentesque id, ultrices dapibus justo. Suspendisse maximus dictum ante eu cursus. Quisque velit leo, pretium ac nisl vel, porttitor vehicula tellus. Vestibulum nec diam ante. Vivamus ornare enim at arcu dictum ultrices. Aenean laoreet magna sit amet quam tempus, nec pulvinar tellus rhoncus. Suspendisse potenti. Duis auctor felis ex, ac ultricies ipsum blandit non. Morbi elit orci, posuere et scelerisque vel, pulvinar ac velit. Sed sit amet dapibus dolor. Proin quis nisi sed erat ullamcorper vehicula. Vestibulum consectetur dolor suscipit purus gravida, quis pellentesque elit laoreet.</p>
+
+      <p>Praesent et risus et neque pulvinar placerat vitae sed diam. Maecenas nisl odio, mattis in quam at, pulvinar ullamcorper nunc. Etiam aliquam enim vel turpis ultrices efficitur. Praesent sed faucibus justo. In pellentesque dictum quam, at porttitor sem. Phasellus sed dolor at justo auctor facilisis id ut nulla. Nulla ut nisl rutrum, sollicitudin odio et, hendrerit nisi. Morbi sit amet odio iaculis, fermentum neque eget, lobortis nulla. Duis viverra sem enim, faucibus hendrerit nisi iaculis ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor leo sit amet elit condimentum, nec feugiat erat sollicitudin. Vestibulum semper accumsan enim in bibendum. Etiam urna dui, fringilla quis facilisis a, lacinia in augue. Curabitur at ipsum sollicitudin, gravida nisl ac, egestas ex. Aliquam ut cursus purus, eget hendrerit felis.</p>
+
+      <p>Aenean pharetra auctor nibh, quis mattis felis ullamcorper eu. Proin tincidunt erat in nulla tempor, eget sollicitudin mauris porttitor. Sed non congue eros. Praesent sed lobortis massa. Suspendisse ornare odio vitae velit ultricies, in tempus nulla malesuada. Praesent a mauris nec nisl convallis volutpat. Nullam ligula lorem, sodales ultrices porttitor non, pretium eget risus. Fusce suscipit magna id enim scelerisque, ac convallis magna rutrum.
+      </p>
     </div>
   </div>
 </div>
