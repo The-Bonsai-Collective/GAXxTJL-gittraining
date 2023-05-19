@@ -4,189 +4,61 @@
 
 /* two */
 
-.zoomer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.zoomer .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.zoomer .wrapper .images {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  /*transform: scale(0, 0);*/
-  z-index: -1;
-}
-
-.zoomer .wrapper .images .clipper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.zoomer .wrapper .images .clipper img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
+.line {
   width: 100%;
-  filter: brightness(70%);
-}
-
-.zoomer .text {
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  width: 90%;
-}
-
-.zoomer .text .clipper {
-  display: flex;
-  flex-direction: column;
-}
-
-.zoomer .text .clipper h2 {
-  text-align: center;
-}
-
-.sticky-content {
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+  display: inline-block;
+  background-color: rgba(255,255,255,1);
 }
 
-.sticky-content .wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 90%;
-}
-
-.sticky-content .wrapper .text {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  width: calc(50%);
-}
-
-.sticky-content .wrapper .images {
-  width: calc(50%);
-  height: auto;
-}
-
-
-
-
-wrap-all {
-  position: relative;
-}
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background-image: url(https://picsum.photos/1613/1099);
-  background-size: auto 100vh;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-  border-bottom: 1px solid black;
-}
-
-.wrap {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: fit-content;
-  overflow: hidden;
-}
-.wrap h1 {
-  position: relative;
-  font-family: sans-serif;
-  font-size: 4vw;
-  color: black;
-  margin: 0;
-}
-.wrap h2 {
-  position: relative;
-  font-family: sans-serif;
-  font-size: 4vw;
-  color: green;
-  margin: 0;
+.orangeWrapper {
+  padding:0;
 }
 
 
 </style>
   
 
-<<section id="holdstart" class="panel">
-  <div class="wrap center">
-    <h1>Start Panel</h1>
+<div class="description panel blue">
+  <h2>scroll down</h2>
   </div>
-</section>
 
-<div class="wrap-all">
-  <div class="bg"></div>
+
+  <section class="panel red">
+    <h2>more</h2>
+  </section>
+
+<div class="panel orangeWrapper">
+  <section class="panel orange">
+    
+    <h2><span class="line line-2"></span>This panel grows in size</h2>
+  </section>
   
-  <div class="start-trig"></div>
-  <section id="holdone" class="panel">
-    <div class="wrap center">
-      <h2 class="lines">Section One</h2>
-      <h2 class="lines">Have a COKE.</h2>
-    </div>
-  </section>
-
-  <section id="holdtwo" class="panel">
-    <div class="wrap center">
-      <h2 class="lines">Section Two</h2>
-      <h2 class="lines">AND.</h2>
-    </div>
-  </section>
-
-  <section id="holdthree" class="panel">
-    <div class="wrap center">
-      <h2 class="lines">Section Three</h2>
-      <h2 class="lines">a SMILE!</h2>
-    </div>
-  </section>
-
 </div>
 
-<section id="holdstart" class="panel">
-  <div class="wrap center">
-    <h1>End Panel</h1>
-  </div>
+  <section class="panel purple">
+   
+  </section>
+
+
+
+<section class="panel gray">
+  DONE!
 </section>
+
+
+
+
+
+
+<header>
+   <a href="https://greensock.com/scrolltrigger">
+     <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
+  </a> 
+</header>
 
 
 
