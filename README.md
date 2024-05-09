@@ -14,8 +14,6 @@ Lead Developer | Ben - [Website](https://gakdesign.co.uk/)
 
 Secondary Developer | Tonya - [Website](https://tjldesigns.com/)
 
-Additional Developer | Eliot - [Website](https://)
-
 ## Project Team
 
 Designer | Rob
